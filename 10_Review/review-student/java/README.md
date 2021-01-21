@@ -57,7 +57,7 @@ The second constructor is a no-argument constructor. This constructor allows you
 
 | Method Name | Description |
 | ----------- | ----------- |
-| `getFullName()`| A derived property that returns the employee's full name in the following format: "Last, First"
+| `getFullName()`| A derived property that returns the employee's full name in the following format: "Last, First"|
 | `raiseSalary(double percent)` | A method that raises the employee's salary by x percent |
 
 ### Step Three: Create the `Project` class
@@ -119,11 +119,11 @@ Next, in `createEmployees()`, create three employees and add them to the list:
 
 > Tip: use the `Department`s from the `departments` list to assign each employee's department. Retrieve the two departments you need by using the `get()` method.
 
-| employeeId | firstName | lastName | email | salary | department | hireDate
+| employeeId | firstName | lastName | email | salary | department | hireDate|
 |------|------|------|------|------|------|------|
-| 001 | Dean | Johnson | djohnson@teams.com | 60000 | Engineering | 08/21/2020
-| 002 | Angie | Smith | asmith@teams.com | 60000 | Engineering | 08/21/2020
-| 003 | Margaret | Thompson | mthompson@teams.com | 60000 | Marketing | 08/21/2020
+| 001 | Dean | Johnson | djohnson@teams.com | 60000 | Engineering | 08/21/2020|
+| 002 | Angie | Smith | asmith@teams.com | 60000 | Engineering | 08/21/2020|
+| 003 | Margaret | Thompson | mthompson@teams.com | 60000 | Marketing | 08/21/2020|
 
 Before printing the list of `Employees`, give Angie a 10% raise.
 
@@ -242,7 +242,7 @@ Update the `hireDate` to use the `LocalDate` type. In the `createEmployees()` me
 
 Earlier, you wrote code to retrieve a specific department from the `departments` list by its index, but what if you didn't know its index, or if it was an unordered collection? You could instead loop through the collection, test for a particular value, and return the item that matches. This is a common technique to use when a language or library doesn't provide a built-in method, or you're managing complex data or conditions.
 
-Create another `private static` method in the `Application` class. Have the method accept a `String` and return a `Department`. Give the method a descriptive name for what it does—for example, `getDepartmentByName`.
+Create another `private` method in the `Application` class. Have the method accept a `String` and return a `Department`. Give the method a descriptive name for what it does—for example, `getDepartmentByName`.
 
 In the method, iterate through `departments`, and test if each department's `name` matches the `String` passed into the method. If it matches, return that `Department`. If there's no match, return `null`.
 
